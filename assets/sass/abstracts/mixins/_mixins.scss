@@ -1,0 +1,53 @@
+
+// MINEN
+@mixin fullwidth {
+	float: left;
+	width: 100%;
+	clear: both;
+}    
+
+@mixin background_cover {
+	background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: repeat-y;
+	background-color: $color_bg_primary;
+}
+
+@mixin gradient {
+	opacity: 0.9;
+	background: rgb(65,0,163);
+	background: -moz-linear-gradient(-90deg, rgba(65,0,163,1) 0%, rgba(65,0,163,1) 24%, rgba(250,242,7,1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(65,0,163,1) 0%, rgba(65,0,163,1) 24%, rgba(250,242,7,1) 100%);
+	background: linear-gradient(-90deg, rgba(65,0,163,1) 0%, rgba(65,0,163,1) 24%, rgba(250,242,7,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4100a3",endColorstr="#faf207",GradientType=1);
+}
+
+@keyframes animate_bg_only {
+	from {
+	  background-size:100%;
+	}
+	to {
+	  background-size: 120%;
+	}
+  }
+@mixin animate_bg {
+	animation: animate_bg_only 5s linear infinite;
+	animation-direction: alternate;
+}
+
+@mixin btn($fontsize,$paddings) {
+	background-color:$color_bg_primary;
+	border-radius: 3px;
+	cursor: pointer;
+	color: #ffffff;
+	font-weight: 500;
+	border: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	appearance: none;
+	-webkit-appearance: none;
+	margin: 0;
+	font-size:$fontsize;
+	padding:$paddings;
+}
