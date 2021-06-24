@@ -199,10 +199,16 @@ footer {
 }
 
 @-webkit-keyframes animate_bg_only {
-  from {
+  0% {
     background-size: 100%;
   }
-  to {
+  30% {
+    background-size: 105%;
+  }
+  60% {
+    background-size: 110%;
+  }
+  100% {
     background-size: 120%;
   }
 }
