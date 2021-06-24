@@ -189,7 +189,7 @@ footer {
   font-style: normal;
 }
 
-@-webkit-keyframes animate_bg_only {
+@keyframes animate_bg_only {
   from {
     background-size: 100%;
   }
@@ -198,7 +198,7 @@ footer {
   }
 }
 
-@keyframes animate_bg_only {
+@-webkit-keyframes animate_bg_only {
   from {
     background-size: 100%;
   }
@@ -1142,10 +1142,10 @@ header {
   background-position-y: center;
   background-repeat: repeat-y;
   background-color: #4E00A9;
+  animation: animate_bg_only 5s linear infinite;
+  animation-direction: alternate;
   -webkit-animation: animate_bg_only 5s linear infinite;
-          animation: animate_bg_only 5s linear infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   height: 800px;
   height: 100vh;
   overflow: hidden;
@@ -1264,10 +1264,10 @@ footer {
   background-position-y: center;
   background-repeat: repeat-y;
   background-color: #4E00A9;
+  animation: animate_bg_only 5s linear infinite;
+  animation-direction: alternate;
   -webkit-animation: animate_bg_only 5s linear infinite;
-          animation: animate_bg_only 5s linear infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   height: 800px;
   height: 100vh;
   overflow: hidden;
