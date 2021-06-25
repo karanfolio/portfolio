@@ -213,6 +213,28 @@ footer {
   }
 }
 
+@keyframes animate_header {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}
+
+@-webkit-keyframes animate_header {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}
+
 @media all and (min-width: 1300px) {
   div.row {
     margin-right: -30px;
@@ -1148,13 +1170,10 @@ header {
   background-position-y: center;
   background-repeat: repeat-y;
   background-color: #4E00A9;
-  animation: animate_bg_only 5s linear infinite;
-  animation-direction: alternate;
-  -webkit-animation: animate_bg_only 5s linear infinite;
-  -webkit-animation-direction: alternate;
   height: 800px;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 header p {
@@ -1167,14 +1186,36 @@ header p strong {
   color: #fff;
 }
 
+.animate_header {
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: repeat-y;
+  background-color: #4E00A9;
+  animation: animate_header 5s linear infinite;
+  animation-direction: alternate;
+  -webkit-animation: animate_header 5s linear infinite;
+  -webkit-animation-direction: alternate;
+  position: absolute;
+  height: 800px;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+
+header .flexbox-contaniner {
+  position: relative;
+  z-index: 5;
+}
+
 @media screen and (min-width: 768px) {
-  header {
+  header, .animate_header {
     background-image: url("../img/branding_mac.jpg");
   }
 }
 
 @media screen and (max-width: 767px) {
-  header {
+  .animate_header {
     background-image: url("../img/branding_iphone.jpg");
   }
 }
