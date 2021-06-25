@@ -246,7 +246,7 @@ footer {
   }
 }
 
-@media all and (max-width: 1299px) {
+@media all and (min-width: 768px) and (max-width: 1299px) {
   div.row {
     margin-right: -20px;
     margin-left: -20px;
@@ -254,6 +254,17 @@ footer {
   .row [class*="col-"] {
     padding-right: 20px;
     padding-left: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  div.row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .row [class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -1374,14 +1385,6 @@ footer p small:hover {
   .flexbox-table-content {
     padding: 2em;
   }
-  div.row {
-    margin-right: -20px;
-    margin-left: -20px;
-  }
-  .row [class*="col-"] {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
   nav section {
     max-width: 960px;
     padding-top: 1em;
@@ -1414,13 +1417,13 @@ footer p small:hover {
   }
 }
 
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
   .cf_spacer {
     padding-top: 0;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .cf_spacer {
     padding-top: 0;
   }
@@ -1536,9 +1539,13 @@ footer p small:hover {
   }
   .flexbox-table-content {
     padding: 0 1.7em 0 1.7em;
-    display: table-cell;
+    display: table;
     height: 100%;
     width: 100%;
+    vertical-align: middle;
+  }
+  .td {
+    display: table-cell;
     vertical-align: middle;
   }
   .flexbox-tabel-cell + .flexbox-tabel-cell .flexbox-table-content {
@@ -1568,6 +1575,11 @@ footer p small:hover {
   }
   .row-head {
     margin-bottom: 3em;
+  }
+  .row_skills > div {
+    float: left;
+    width: 100%;
+    clear: both;
   }
   .row_skills {
     position: relative;
@@ -1666,9 +1678,13 @@ footer p small:hover {
   }
   .flexbox-table-content {
     padding: 0 1.7em 0 1.7em;
-    display: table-cell;
+    display: table;
     height: 100%;
     width: 100%;
+    vertical-align: middle;
+  }
+  .td {
+    display: table-cell;
     vertical-align: middle;
   }
   .flexbox-tabel-cell + .flexbox-tabel-cell .flexbox-table-content {
