@@ -240,6 +240,10 @@
      .heroText {
       padding: 0 1em;
     }
+     img.profilePicture {
+     width:120px;
+     margin-botton:16px;
+    }
 
      /* TYPO */
      body {
@@ -419,6 +423,10 @@
       padding-bottom: 32px;
       background-size: cover;
      }
+    img.profilePicture {
+     width:120px;
+     margin-botton:16px;
+    }
 
      /* TYPO */
      body {
