@@ -242,7 +242,7 @@
     }
      img.profilePicture {
      width:120px;
-     margin-botton:16px;
+     margin-bottom:16px;
     }
 
      /* TYPO */
@@ -378,6 +378,21 @@
     .cardyWhiteUnique h3 {
       margin-bottom: 8px;
     }
+     /* MOTION */
+    .motionIphone {
+      width: 48%;
+      margin-right: 0;
+      max-height: 400px;
+    }
+    .motionIphone + .motionIphone {
+      margin-left: 4%;
+    }
+    .motionMac {
+        margin-top: 24px;
+        width: 100%;
+        clear: both;
+        max-height: 500px;
+    }
 
 }
 
@@ -425,7 +440,7 @@
      }
     img.profilePicture {
      width:120px;
-     margin-botton:16px;
+     margin-bottom:16px;
     }
 
      /* TYPO */
