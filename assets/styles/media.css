@@ -379,6 +379,12 @@
       margin-bottom: 8px;
     }
      /* MOTION */
+     .cf_motion {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
     .motionIphone {
       width: 48%;
       margin-right: 0;
