@@ -921,3 +921,12 @@ footer h2 {
   background-color: #efefef;
   max-height: 800px;
 }
+.motionMac100 {
+  box-shadow: 0px 1px 8px rgba(69, 69, 69, 0.1);
+  float: left;
+  width: 100%;
+  min-height: 150px;
+  background-color: #efefef;
+  max-height: 800px;
+  margin-top: 24px;
+}
